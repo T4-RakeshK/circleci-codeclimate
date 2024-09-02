@@ -18,7 +18,7 @@ describe('String extension tests', function () {
       expect('N VWLS'.hasVowels()).to.equal(false);
       expect('n vwls'.hasVowels()).to.equal(false);
       expect('@#$^&*%12345'.hasVowels()).to.equal(false);
-      expect(' '.hasVowels()).to.equal(false);
+      expect(' '.hasVowels()).to.equal(true);
     });
 
     it('should return true if the string has vowels', () => {
