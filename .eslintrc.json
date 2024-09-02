@@ -23,7 +23,7 @@
             "unix"
         ],
         "prefer-arrow-callback": [
-            0
+            2
         ],
         "quotes": [
             2,
