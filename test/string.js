@@ -8,6 +8,8 @@ describe('String extension tests', function () {
       expect('To be or not to be, that is the question'.isQuestion()).to.equal(false);
       expect('Quis custodiet ipsos custodes?'.isQuestion()).to.equal(true);
       expect('are we connected?'.isQuestion()).to.equal(true);
+      expect('What is your name'.isQuestion()).to.equal(false);
+      expect('What is your name?'.isQuestion()).to.equal(true);
     });
   });
 
@@ -17,6 +19,7 @@ describe('String extension tests', function () {
       expect('n vwls'.hasVowels()).to.equal(false);
       expect('@#$^&*%12345'.hasVowels()).to.equal(false);
       expect(' '.hasVowels()).to.equal(false);
+      expect('*()AA'.hasVowels()).to.equal(true);
     });
 
     it('should return true if the string has vowels', () => {
