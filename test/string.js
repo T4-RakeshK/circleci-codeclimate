@@ -9,7 +9,7 @@ describe('String extension tests', function () {
       expect('Quis custodiet ipsos custodes?'.isQuestion()).to.equal(true);
       expect('are we connected?'.isQuestion()).to.equal(true);
       expect('What is your name'.isQuestion()).to.equal(false);
-      expect('What is your name?'.isQuestion()).to.equal(false);
+      expect('What is your name?'.isQuestion()).to.equal(true);
     });
   });
 
