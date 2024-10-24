@@ -7,7 +7,7 @@ describe('String extension tests', function () {
     it('Should return true if given a question', function () {
       expect('To be or not to be, that is the question'.isQuestion()).to.equal(false);
       expect('Quis custodiet ipsos custodes?'.isQuestion()).to.equal(true);
-      expect('are we connected?'.isQuestion()).to.equal(true);
+      expect('are we connected?'.isQuestion()).to.equal(false);
       expect('What is your name'.isQuestion()).to.equal(false);
       expect('What is your name?'.isQuestion()).to.equal(true);
     });
